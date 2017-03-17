@@ -1,0 +1,7 @@
+﻿  Checking Build System
+  CMake does not need to re-run because D:/libigl/interactive/build/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because D:/libigl/interactive/build/libigl/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because D:/libigl/interactive/build/libigl/glew/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because D:/libigl/interactive/build/libigl/nanogui/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because D:/libigl/interactive/build/libigl/nanogui/ext_build/glfw/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because D:/libigl/interactive/build/libigl/nanogui/ext_build/glfw/src/CMakeFiles/generate.stamp is up-to-date.
