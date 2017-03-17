@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{D95E539E-E65C-30F2-8811-93E792FE5C2B}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>example_bin</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\libigl\interactive\build\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">example_bin.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">example_bin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\libigl\interactive\build\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">example_bin.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">example_bin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\libigl\interactive\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">example_bin.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">example_bin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\libigl\interactive\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">example_bin.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">example_bin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <SourcePath>D:\libigl\libigl\external\tinyxml2;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\eigen;D:\libigl\libigl\shared\cmake\..\..\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glew\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glfw\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;IGL_NO_MOSEK;IGL_VIEWER_WITH_NANOGUI;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;IGL_NO_MOSEK;IGL_VIEWER_WITH_NANOGUI;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\eigen;D:\libigl\libigl\shared\cmake\..\..\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glew\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glfw\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\eigen;D:\libigl\libigl\shared\cmake\..\..\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glew\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glfw\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;opengl32.lib;libigl\glew\Debug\glew.lib;libigl\nanogui\ext_build\glfw\src\Debug\glfw3.lib;libigl\nanogui\Debug\nanogui.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/libigl/interactive/build/Debug/example_bin.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/libigl/interactive/build/example_bin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\libigl\libigl\external\embree\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\eigen;D:\libigl\libigl\shared\cmake\..\..\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glew\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glfw\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\nanovg\src;D:\libigl\libigl\shared\cmake\..\..\external\tinyxml2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IGL_NO_MOSEK;IGL_VIEWER_WITH_NANOGUI;CMAKE_INTDIR="Release";ENABLE_IO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IGL_NO_MOSEK;IGL_VIEWER_WITH_NANOGUI;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\eigen;D:\libigl\libigl\shared\cmake\..\..\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glew\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glfw\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\eigen;D:\libigl\libigl\shared\cmake\..\..\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glew\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glfw\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;opengl32.lib;libigl\glew\Release\glew.lib;libigl\nanogui\ext_build\glfw\src\Release\glfw3.lib;libigl\nanogui\Release\nanogui.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/libigl/interactive/build/Release/example_bin.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/libigl/interactive/build/example_bin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\eigen;D:\libigl\libigl\shared\cmake\..\..\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glew\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glfw\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IGL_NO_MOSEK;IGL_VIEWER_WITH_NANOGUI;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IGL_NO_MOSEK;IGL_VIEWER_WITH_NANOGUI;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\eigen;D:\libigl\libigl\shared\cmake\..\..\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glew\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glfw\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\eigen;D:\libigl\libigl\shared\cmake\..\..\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glew\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glfw\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;opengl32.lib;libigl\glew\MinSizeRel\glew.lib;libigl\nanogui\ext_build\glfw\src\MinSizeRel\glfw3.lib;libigl\nanogui\MinSizeRel\nanogui.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/libigl/interactive/build/MinSizeRel/example_bin.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/libigl/interactive/build/MinSizeRel/example_bin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\eigen;D:\libigl\libigl\shared\cmake\..\..\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glew\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glfw\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IGL_NO_MOSEK;IGL_VIEWER_WITH_NANOGUI;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IGL_NO_MOSEK;IGL_VIEWER_WITH_NANOGUI;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\eigen;D:\libigl\libigl\shared\cmake\..\..\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glew\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glfw\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\eigen;D:\libigl\libigl\shared\cmake\..\..\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glew\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\glfw\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\include;D:\libigl\libigl\shared\cmake\..\..\external\nanogui\ext\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;opengl32.lib;libigl\glew\RelWithDebInfo\glew.lib;libigl\nanogui\ext_build\glfw\src\RelWithDebInfo\glfw3.lib;libigl\nanogui\RelWithDebInfo\nanogui.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/libigl/interactive/build/RelWithDebInfo/example_bin.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/libigl/interactive/build/RelWithDebInfo/example_bin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\libigl\interactive\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/libigl/interactive/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/libigl/interactive -BD:/libigl/interactive/build --check-stamp-file D:\libigl\interactive\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/libigl/interactive/CMakeLists.txt;D:\libigl\interactive\CMakeLists.txt;D:\libigl\interactive\build\CMakeFiles\3.7.1\CMakeSystem.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;D:\libigl\interactive\build\CMakeFiles\3.7.1\CMakeCCompiler.cmake;D:\libigl\interactive\build\CMakeFiles\3.7.1\CMakeCXXCompiler.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\libigl\interactive\build\CMakeFiles\3.7.1\CMakeRCCompiler.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeRCInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\libigl\interactive\cmake\FindLIBIGL.cmake;D:\libigl\interactive\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\libigl\interactive\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/libigl/interactive/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/libigl/interactive -BD:/libigl/interactive/build --check-stamp-file D:\libigl\interactive\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/libigl/interactive/CMakeLists.txt;D:\libigl\interactive\CMakeLists.txt;D:\libigl\interactive\build\CMakeFiles\3.7.1\CMakeSystem.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;D:\libigl\interactive\build\CMakeFiles\3.7.1\CMakeCCompiler.cmake;D:\libigl\interactive\build\CMakeFiles\3.7.1\CMakeCXXCompiler.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\libigl\interactive\build\CMakeFiles\3.7.1\CMakeRCCompiler.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeRCInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\libigl\interactive\cmake\FindLIBIGL.cmake;D:\libigl\interactive\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\libigl\interactive\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/libigl/interactive/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/libigl/interactive -BD:/libigl/interactive/build --check-stamp-file D:\libigl\interactive\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/libigl/interactive/CMakeLists.txt;D:\libigl\interactive\CMakeLists.txt;D:\libigl\interactive\build\CMakeFiles\3.7.1\CMakeSystem.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;D:\libigl\interactive\build\CMakeFiles\3.7.1\CMakeCCompiler.cmake;D:\libigl\interactive\build\CMakeFiles\3.7.1\CMakeCXXCompiler.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\libigl\interactive\build\CMakeFiles\3.7.1\CMakeRCCompiler.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeRCInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\libigl\interactive\cmake\FindLIBIGL.cmake;D:\libigl\interactive\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\libigl\interactive\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/libigl/interactive/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/libigl/interactive -BD:/libigl/interactive/build --check-stamp-file D:\libigl\interactive\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/libigl/interactive/CMakeLists.txt;D:\libigl\interactive\CMakeLists.txt;D:\libigl\interactive\build\CMakeFiles\3.7.1\CMakeSystem.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;D:\libigl\interactive\build\CMakeFiles\3.7.1\CMakeCCompiler.cmake;D:\libigl\interactive\build\CMakeFiles\3.7.1\CMakeCXXCompiler.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\libigl\interactive\build\CMakeFiles\3.7.1\CMakeRCCompiler.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeRCInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\libigl\interactive\cmake\FindLIBIGL.cmake;D:\libigl\interactive\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\libigl\interactive\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\interactiveSelection.cpp" />
+    <ClCompile Include="..\qJet.cpp" />
+    <ClCompile Include="..\tinyxml2.cpp" />
+    <ClCompile Include="D:\libigl\interactive\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/libigl/interactive/build/ZERO_CHECK.vcxproj">
+      <Project>5640D2FB-D90A-33EE-8804-9AB40439944D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/libigl/interactive/build/libigl/glew/glew.vcxproj">
+      <Project>18879FC4-B4BD-3580-9B3E-C4530493BD06</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/libigl/interactive/build/libigl/nanogui/ext_build/glfw/src/glfw.vcxproj">
+      <Project>269417DC-6CE7-3879-BC3F-EE91800D225F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/libigl/interactive/build/libigl/nanogui/nanogui.vcxproj">
+      <Project>335EA6F3-BCA9-3B0B-9B11-A204ABBE8B21</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\interactiveSelection.h" />
+    <ClInclude Include="..\qJet.h" />
+    <ClInclude Include="..\tinyxml2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\settings.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
